@@ -1,0 +1,36 @@
+{
+    "code": "RequestDisallowedByPolicy",
+    "target": "stgwesteuropenota",
+    "message": "Resource 'stgwesteuropenota' was disallowed by policy. Policy identifiers: '[{\"policyAssignment\":{\"name\":\"demo-allowed-locations-with-parameters\",\"id\":\"/subscriptions/f0e483fc-9d2f-4a4b-8aee-887a398ff27e/resourcegroups/rg-westeurope-not-allowed/providers/Microsoft.Authorization/policyAssignments/demo-allowed-locations-with-parameters\"},\"policyDefinition\":{\"name\":\"demo-allowed-locations-with-parameters\",\"id\":\"/subscriptions/f0e483fc-9d2f-4a4b-8aee-887a398ff27e/providers/Microsoft.Authorization/policyDefinitions/demo-allowed-locations-with-parameters\"}}]'.",
+    "additionalInfo": [
+        {
+            "type": "PolicyViolation",
+            "info": {
+                "evaluationDetails": {
+                    "evaluatedExpressions": [
+                        {
+                            "result": "True",
+                            "expressionKind": "Field",
+                            "expression": "location",
+                            "path": "location",
+                            "expressionValue": "westeurope",
+                            "targetValue": [
+                                "northeurope"
+                            ],
+                            "operator": "NotIn"
+                        }
+                    ]
+                },
+                "policyDefinitionId": "/subscriptions/f0e483fc-9d2f-4a4b-8aee-887a398ff27e/providers/Microsoft.Authorization/policyDefinitions/demo-allowed-locations-with-parameters",
+                "policyDefinitionName": "demo-allowed-locations-with-parameters",
+                "policyDefinitionDisplayName": "demo-allowed-locations-with-parameters",
+                "policyDefinitionEffect": "Deny",
+                "policyAssignmentId": "/subscriptions/f0e483fc-9d2f-4a4b-8aee-887a398ff27e/resourcegroups/rg-westeurope-not-allowed/providers/Microsoft.Authorization/policyAssignments/demo-allowed-locations-with-parameters",
+                "policyAssignmentName": "demo-allowed-locations-with-parameters",
+                "policyAssignmentScope": "/subscriptions/f0e483fc-9d2f-4a4b-8aee-887a398ff27e/resourcegroups/rg-westeurope-not-allowed",
+                "policyAssignmentParameters": {},
+                "policyExemptionIds": []
+            }
+        }
+    ]
+}
