@@ -111,5 +111,5 @@
     "versions": ["1.0.1"]
   },
   "type": "Microsoft.Authorization/policyDefinitions",
-  "name": "xms-privatedns-keyvault"
+  "name": "xebia-privatedns-keyvault"
 }
